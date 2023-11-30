@@ -1,0 +1,134 @@
+
+.create-order-button {
+    display: inline-block;
+    background-color: #4c4c20;
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: auto;
+    height: fit-content;
+    margin-top: 15px;
+}
+
+.create-order-button:hover {
+    background-color: #84842c;
+}
+
+.update-button{
+    background-color: #4c4c20;
+    color: white;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 10px;
+}
+
+main {
+    padding: 1.5rem;
+    min-height: calc(100vh - 70px);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -16px;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+}
+
+.page-header small {
+    font-size: 1.2rem;
+}
+
+.no-purchase-record {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: darkolivegreen;
+    background-color:#d6d6d687;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.batch-title{
+    margin-top: 20px;
+    margin-bottom: -30px;
+    color: #4c4c20;
+
+}
+
+.purchase-table-container{
+    width: 111%;
+}
+
+
+.purchase-table-container th{
+    width: 14%;
+}
+
+.purchase-table-container th:nth-child(6){
+    width: 100%;
+}
+
+
+
+#upt-form-inventory{
+    padding: 35px;
+    min-width: 200px;
+    width: 400px;
+    background: url(../images/bgg.png) no-repeat fixed;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+  
+  #upt-form-inventory input[type="text"],
+  #upt-form-inventory input[type="number"],
+  #upt-form-inventory button {
+    display: block;
+    margin: 10px auto;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #ffffff38;
+    color:#f3f388;
+  }
+  
+  
+  #upt-form-inventory input[type="text"]::placeholder,
+  #upt-form-inventory input[type="number"]::placeholder
+{
+    color: #b6b6b6;
+  }
+  
+  #upt-form-inventory button {
+    background-color:#84842c;
+    color: white;
+    border: none;
+    margin-top: 35px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #upt-form-inventory button:hover {
+    background-color: #6d6d1f;
+  }

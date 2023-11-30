@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;}
+
+html {
+  font-size: 82.5%;}
+
+html,body{
+  background: url(../images/gbb.png) no-repeat fixed;
+  background-size: cover;}   
+
+header {
+  width: 100%;
+  background: url(../images/bgg.png) no-repeat fixed;
+  background-size: cover;
+  padding: 1rem 4rem;}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;}
+
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;}
+
+
+
+nav ul a {
+  color: #cdc06fcd;
+  font-weight: 500;}
+
+#nav-bar li a {
+  position: relative;
+}
+    
+#nav-bar li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #cdc06f4d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+li a::after {
+  background-color: #cdc06fcd;
+}
+    
+#nav-bar li a:hover::before {
+  transform: scaleX(1);
+}
+ 
+#ham-menu {display: none;}
+
+.nav-menu-icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo-icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav ul.active {left: 0;}
+
+
+
+/** ----- user try 2 ---- **/
+.action{
+  position: fixed;
+  top: -10px;
+  right: 28px;}
+
+.user-pic{
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  cursor: pointer;}
+
+.action .profile{
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;}
+
+.action .menu{
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #6a6823f0;
+
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity:0;}
+
+.action .menu.active{
+  top: 80px;
+  visibility: visible;
+  opacity: 1;}
+
+.action .menu::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #6a6823f0;
+  transform: rotate(45deg);
+}
+.action .menu h3{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  padding-bottom: 7px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(189, 206, 182);
+  font-size: 18px;  
+  color: #c1c164;
+  line-height: 1.2em;}
+
+.action .menu h3 span{
+  font-size: 14px;
+  color: #e8e8e8;
+  font-weight: 400;
+}
+
+.action .menu ul li{
+  list-style: none;
+  padding: 10px 0;
+  direction: flex;
+  margin-bottom: -7px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+
+
+
+.action .menu ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(189, 206, 182);
+  font-weight: 500;
+  transition: 0.5s;}
+
+.action .menu ul li a:hover{color: rgba(171, 195, 162, 0.534);}
+
+
+.wrapper form .field .cancel-button:hover {
+  color: #665f2fcd;
+}
+
+.wrapper form .field .cancel-button {
+  color: #233227;
+  font-size: 13.5px;
+  margin-top: 10px;
+}
+
+
+.cancel-button{
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.cancel-button:hover{
+  color: #a1a17b;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  -ms-appearance: textfield;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+
+/* para pag nag-resize yung window eme*/
+
+@media only screen and (max-width: 991px) {
+  html {font-size: 56.25%;}}
+
+@media only screen and (max-width: 767px) {
+  html {font-size: 50%;}
+
+  #ham-menu {
+    display: block;
+    color: #cdc06fcd;
+    cursor:pointer;}
+
+  nav a#logo,
+  #ham-menu {font-size: 2.5rem;}
+
+  nav ul {
+    background-color: white;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;}}
+
+@media only screen and (max-width: 575px) {
+  html {font-size: 46.87%;}
+
+  header {padding: 2rem 3rem;}
+  
+  nav a {font-size: 3.5rem;}
+
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);}}

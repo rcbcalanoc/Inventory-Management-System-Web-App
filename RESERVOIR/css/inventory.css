@@ -1,0 +1,127 @@
+/* TABLE */
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 2.5%;
+  font-size: 1.2rem;
+}
+
+th {
+  background-color: #4c4c20;
+  color: #dbdbdb;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+tr.selected {
+  background-color: #d9fae9;
+}
+
+#output-table th {
+  background-color: #4c4c20;
+  color: #dbdbdb;
+  font-weight: bold;
+  padding: 16px;
+  text-align: center;
+}
+
+#output-table tr:hover {
+  background-color: #ddd;
+  cursor: poinventoryer;
+}
+
+.table-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ADD BUTTON */
+
+.add-btn-inventory{
+  display: flex;
+  margin-top: 15px;
+  position: relative;
+  justify-content: center;
+}
+
+.add-btn-inventory button {
+  background-color: #4c4c20;
+  color: white;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.add-btn-inventory button:hover {
+  background-color: #84842c;
+}
+
+/* FORM */
+
+
+#add-form-inventory{
+  padding: 35px;
+  min-width: 200px;
+  width: 400px;
+  background: url(../images/bgg.png) no-repeat fixed;
+  background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#add-form-inventory input[type="text"],
+#add-form-inventory input[type="number"],
+#add-form-inventory input[type="date"],
+#add-form-inventory button {
+  display: block;
+  margin: 10px auto;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #ffffff38;
+  color:#f3f388;
+}
+
+
+#add-form-inventory input[type="text"]::placeholder,
+#add-form-inventory input[type="number"]::placeholder,
+#add-form-inventory input[type="date"]::placeholder{
+  color: #b6b6b6;
+}
+
+#add-form-inventory button {
+  background-color:#84842c;
+  color: white;
+  border: none;
+  margin-top: 35px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#add-form-inventory button:hover {
+  background-color: #6d6d1f;
+}
